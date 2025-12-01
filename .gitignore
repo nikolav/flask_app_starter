@@ -1,0 +1,111 @@
+# -------------------------
+# PYTHON
+# -------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+.eggs/
+.eggs-info/
+*.egg
+*.egg-info/
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+.coverage.*
+*.cover
+*.py,cover
+coverage.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pyright / pylance
+pyrightconfig.json
+typings/
+
+# Pyre
+.pyre/
+
+# Pytype
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local dev tools
+.envrc
+.direnv/
+.idea/
+.vscode/
+*.code-workspace
+
+# -------------------------
+# OS / EDITOR JUNK
+# -------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# -------------------------
+# LOGS
+# -------------------------
+*.log
+
+# -------------------------
+# ARCHIVES
+# -------------------------
+*.tar
+*.tgz
+*.gz
+*.zip
+*.rar
+*.7z
+
+# -------------------------
+# ENV FILES & SECRETS
+# -------------------------
+.env
+.env.*
+*.pem
+*.key
+*.crt
