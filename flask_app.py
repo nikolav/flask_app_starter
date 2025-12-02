@@ -19,10 +19,10 @@ app = Flask(__name__,
 app.config['SECRET_KEY'] = Config.SECRET_KEY
 
 # services:cors
-_CORS_ALLOWED_ALL = { r'.*': { 'origins': '*' } }
 from src.config.cors import cors_resources
+from src.config.cors import CORS_ALLOWED_ALL
 CORS(app, 
-    resources = cors_resources if Config.PRODUCTION else _CORS_ALLOWED_ALL,
+    resources = cors_resources if Config.PRODUCTION else CORS_ALLOWED_ALL,
     supports_credentials = True, 
   )
 
