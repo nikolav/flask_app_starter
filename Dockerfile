@@ -28,5 +28,4 @@ RUN chmod +x wserver.sh
 EXPOSE 5000
 
 # Run app
-# CMD ["waitress-serve", "--host", "0.0.0.0", "--port", "5000", "flask_app:app"]
 CMD ["./wserver.sh"]
