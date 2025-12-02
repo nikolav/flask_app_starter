@@ -11,6 +11,7 @@ from src.config import Config
 
 FLASKAPP_PATH = os.path.dirname(__file__)
 
+# app:init
 app = Flask(__name__,
             template_folder = Config.FLASK_TEMPLATES_FOLDER,
           )
@@ -26,7 +27,7 @@ CORS(app,
   )
 
 # services:talisman
-# content security headers
+#   content security headers
 Talisman(app, 
          force_https=False,
         )
