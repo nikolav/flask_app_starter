@@ -33,12 +33,8 @@ Talisman(app,
         )
 
 # routes:home
-@app.route('/', methods = ('GET',))
-def route_home():
-  return { 
-          'status' : 'ok',
-          'time'   : datetime.now(timezone.utc).timestamp(),
-        }
+from src.routes.home import bp_home
+app.register_blueprint(bp_home)
 
 # middleware:before
 from src.middleware.auth import authenticate
