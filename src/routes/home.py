@@ -13,7 +13,11 @@ CORS(bp_home)
 @bp_home.route('/', methods = ('GET',))
 def status_ok():
   return {
-    'status' : 'ok',
+    'status' : 'ok:foo:1',
     'time'   : datetime.now(timezone.utc).timestamp(),
   }
+
+@bp_home.route('/healthcheck', methods = ('GET',))
+def resolve_healthcheck():
+  return { 'ok': True }, 200
 
