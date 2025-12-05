@@ -13,7 +13,7 @@ CORS(bp_home)
 @bp_home.route('/', methods = ('GET',))
 def status_ok():
   return {
-    'status' : 'ok:foo:1',
+    'status' : 'ok:2',
     'time'   : datetime.now(timezone.utc).timestamp(),
   }
 
